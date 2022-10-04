@@ -1,0 +1,62 @@
+{
+  "name": "@qeepsake/ts-string-as-enum",
+  "version": "1.0.0",
+  "description": "Convert string to enum type with TypeScript ⚡️",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "prepare": "run-s build",
+    "test": "jest",
+    "test:lint": "eslint .",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "pre-commit": "lint-staged",
+    "postinstall": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qeepsake/ts-string-as-enum.git"
+  },
+  "keywords": [
+    "typescript",
+    "enum",
+    "convert",
+    "string",
+    "utility"
+  ],
+  "author": "Qeepsake Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qeepsake/ts-string-as-enum/issues"
+  },
+  "homepage": "https://github.com/Qeepsake/ts-string-as-enum#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "husky": "^6.0.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^11.0.0",
+    "microbundle-crl": "^0.13.10",
+    "npm-run-all": "^4.1.5",
+    "pinst": "^2.1.6",
+    "prettier": "^2.3.0",
+    "semantic-release": "^17.4.3",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0"
+  }
+}
